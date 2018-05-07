@@ -2,3 +2,4 @@ glob
 os
 time
 RPi.GPIO
+Adafruit_DHT
