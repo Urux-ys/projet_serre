@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import os
 import glob
-import time
-
 from Adafruit_ADS1x15 import ADS1x15
 from time import sleep
  
