@@ -1,6 +1,4 @@
-# projet_serre
-
-## Raspbian
+# Raspbian
   install requierment using pip :
    ```
     [~]# sudo apt update && sudo apt install python-pip
