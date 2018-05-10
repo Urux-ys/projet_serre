@@ -3,15 +3,15 @@
 ## Raspbian
   install requierment using pip :
    ```
-    ~ ❯❯❯ sudo apt update && sudo apt install python-pip
+    [~]# sudo apt update && sudo apt install python-pip
 
-    ~ ❯❯❯ git clone https://github.com/Urux-ys/projet_serre.git
+    [~]# git clone https://github.com/Urux-ys/projet_serre.git
 
-    ~ ❯❯❯ cd projet_serre/
+    [~] cd projet_serre/
 
-    ~/projet_serre ❯❯❯ sudo pip install -r requirements.txt
+    [~/projet_serre]# sudo pip install -r requirements.txt
 
-    ~/kickthemout ❯❯❯ sudo python main.py
+    [~/kickthemout]# sudo python main.py
     ```
 
 # License 
