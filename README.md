@@ -9,7 +9,7 @@
 
     [~/projet_serre]# sudo pip install -r requirements.txt
 
-    [~/kickthemout]# sudo python main.py
+    [~/projet_serre]# sudo python main.py
    ```
 
 # License 
