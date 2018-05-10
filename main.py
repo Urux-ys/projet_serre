@@ -18,10 +18,10 @@ while True :
 #	if data[0] > 5000 :
 #		eclairer()
 	if data[3] > 25000 :
-		arroser(0.05)
+#		arroser(30)
 #	if data[1] < 3000 :
 #		chauffer()
 #	elif data[1] > 3000 :
 #		stoper_chauffage()
-	time.sleep(18000)
+#	time.sleep(18000)
 data_file.close()
