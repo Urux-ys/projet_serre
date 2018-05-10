@@ -5,7 +5,7 @@ import Adafruit_ADS1x15
 
 def sensor(sensor) :
     adc = Adafruit_ADS1x15.ADS1115()
-    GAIN = 2/3
+    GAIN = 1
     value = adc.read_adc(sensor, gain=GAIN)
     return value
 
