@@ -11,8 +11,12 @@ def sensors_values(sensor) :
 
 
 if __name__ == "__main__" :
-    sensor = input()
-    print sensors_values(sensor)
+    while True :
+        values = [0]*4
+        for i in range (4):
+            values[i]=sensors_values(i)
+        print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*values))
+        time.sleep(0.5)
 
 
 
