@@ -23,5 +23,5 @@ while True :
 #		chauffer()
 #	elif data[1] > 3000 :
 #		stoper_chauffage()
-	
+	time.sleep(18000)
 data_file.close()
