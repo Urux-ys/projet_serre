@@ -7,7 +7,7 @@
 
     [~]# git clone https://github.com/Urux-ys/projet_serre.git
 
-    [~] cd projet_serre/
+    [~]# cd projet_serre/
 
     [~/projet_serre]# sudo pip install -r requirements.txt
 
