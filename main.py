@@ -13,7 +13,8 @@ while True :
 #	eteindre_lumiere
 	for i in range (4):
 		data[i]=sensor(i) 
-	data_file.write('{0:>6}  {1:>6}  {2:>6}  {3:>6}'.format(*data))
+		data_file.write(data[i] + " ")
+#	data_file.write('{0:>6}  {1:>6}  {2:>6}  {3:>6}'.format(*data))
 	data_file.write("\n")
 #	if data[0] > 5000 :
 #		eclairer()
