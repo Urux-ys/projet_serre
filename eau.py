@@ -9,12 +9,11 @@ import glob
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11,GPIO.OUT)
 
-def arroser(tmp):
+def arroser():
 	if sensor(3)>2500:
-		GPIO.output(11,GPIO.HIGH)
-		time.sleep(tmp)
-		GPIO.output(11,GPIO.LOW)
-
+		GPIO.output(11, GPIO.HIGH)
+	else :		
+		GPIO.output(11, GPIO.LOW)
 
 
 if __name__ == "__main__":
@@ -24,5 +23,4 @@ if __name__ == "__main__":
 		GPIO.output(11, GPIO.HIGH)	
 		time.sleep(tmp)
 		GPIO.output(11, GPIO.LOW)
-		time.sleep(tmp)
-		
+		time.sleep(tmp)		

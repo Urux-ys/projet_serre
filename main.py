@@ -6,24 +6,33 @@ from sensors import sensor
 from eau import arroser
 from lumiere import eclairer, eteindre_lumiere
 from temperature import chauffer, stoper_chauffage
+wait_time = input("wait time = ")
+storage_file = raw_input("storage_file = ")
 
 data = [0]*4
-data_file = open("data.txt", "a")
+main_data_file = open("data.txt", "a")
+session_data_file = open(str(storage_file), "w")
+
+main_data_file.write("\n\n ======= values from new run ======= \n\n")
+
 while True :
 	eteindre_lumiere
 	for i in range (4):
 		data[i]=sensor(i) 
-		data_file.write(str(data[i]) + " ")
-	data_file.write('{0:>6}  {1:>6}  {2:>6}  {3:>6}'.format(*data))
-	data_file.write("\n")
+		main_data_file.write(str(data[i]) + " ")
+		session_data_file.write(str(data[i]) + " ") 
+	main_data_file.write("\n")
+	session_data_file.write("\n")
 	if data[0] > 5000 :
 		eclairer()
 	if data[3] > 25000 :
-		arroser(30)
+		arroser()
 	if data[1] < 3000 :
 		chauffer()
 	elif data[1] > 3000 :
 		stoper_chauffage()
-	time.sleep(60)
-data_file.close()
+	time.sleep(wait_time)
+main_data_file.close()
 GPIO.cleanup()
+
+
