@@ -15,7 +15,7 @@ def arroser():
 	else :		
 		GPIO.output(11, GPIO.LOW)
 
-
+'''
 if __name__ == "__main__":
 	while True :
 		tmp = float(sensor(2))/5000
@@ -24,3 +24,4 @@ if __name__ == "__main__":
 		time.sleep(tmp)
 		GPIO.output(11, GPIO.LOW)
 		time.sleep(tmp)		
+'''
