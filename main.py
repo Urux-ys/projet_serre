@@ -24,7 +24,6 @@ while True :
 		chauffer()
 	elif data[1] > 3000 :
 		stoper_chauffage()
-	time.sleep(18000)
+	time.sleep(60)
 data_file.close()
 GPIO.cleanup()
-
