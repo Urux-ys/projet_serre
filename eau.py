@@ -23,5 +23,5 @@ if __name__ == "__main__":
 		GPIO.output(11, GPIO.HIGH)	
 		time.sleep(tmp)
 		GPIO.output(11, GPIO.LOW)
-		time.sleep(tmp)		
-'''
+		time.sleep(tmp)	
+'''	
