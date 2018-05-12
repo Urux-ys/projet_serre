@@ -12,14 +12,14 @@
     [~/projet_serre]# sudo python main.py
    ```
  
-# hardware 
+# hardware :
   use Adafruit I2C ADC module
-  and use A0 analog entry for light sensor \n
-          A1 analog entry for heat sensor \n
-          A3 analog entry for humidity sensor \n
-  use pin number 11 for water control \n
-                 13 for light control \n
-                 15 for heat control  \n
+  and use A0 analog entry for light sensor
+          A1 analog entry for heat sensor
+          A3 analog entry for humidity sensor
+  use pin number 11 for water control 
+                 13 for light control 
+                 15 for heat control  
 
 
 # License 
