@@ -3,7 +3,20 @@ import os
 import glob
 from Adafruit_ADS1x15 import ADS1x15
 from time import sleep
- 
+from sensors import sensor
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(13,GPIO.OUT)
+
+def eclairer() :
+	GPIO.output(13, GPIO.HIGH)
+
+def eteindre_lumiere() :
+	GPIO.output(13, GPIO.LOW)
+
+
+
+'''
 # Weitere benoetigte Module werden importiert und eingerichtet
 import time, signal, sys, os, math
 import RPi.GPIO as GPIO
@@ -73,3 +86,9 @@ try:
  
 except KeyboardInterrupt:
         GPIO.cleanup()
+'''
+
+
+
+
+
