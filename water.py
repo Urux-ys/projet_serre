@@ -9,11 +9,10 @@ import glob
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11,GPIO.OUT)
 
-def water():
-	if sensor(3)>2500:
-		GPIO.output(11, GPIO.HIGH)
-	else :		
-		GPIO.output(11, GPIO.LOW)
+def water_on():
+	GPIO.output(11, GPIO.HIGH)
+def water_off :		
+	GPIO.output(11, GPIO.LOW)
 
 '''
 if __name__ == "__main__":
