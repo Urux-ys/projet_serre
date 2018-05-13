@@ -7,12 +7,6 @@ from water import arroser
 from light import light_on, light_off
 from heater import heater_on, heater_off
 
-try :
-	if os.geteuid() != 0 :
-		print("\n{}ERROR: main.py must be run with root privileges. Try again with sudo:\n\t{}$ sudo python main.py{}\n".format(RED, GREEN, END)) 
-except :
-	print("are you running this on a raspberry pi ?")
-
 # setting up GPIO 
 GPIO.setmode(GPIO.BOARD) # using GPIO with board number
 GPIO.setup(11,GPIO.OUT)
