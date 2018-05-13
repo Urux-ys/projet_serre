@@ -3,9 +3,9 @@ import time, os, glob
 import Adafruit_ADS1x15
 import RPi.GPIO as GPIO
 from sensors import sensor
-from eau import arroser
-from lumiere import eclairer, eteindre_lumiere
-from temperature import chauffer, stoper_chauffage
+from water import arroser
+from light import light_on, light_off
+from heater import heater_on, heater_off
 
 # setting up GPIO 
 GPIO.setmode(GPIO.BOARD) # using GPIO with board number
@@ -26,7 +26,6 @@ session_data_file = open(str(storage_file), "w")
 main_data_file.write("\n\n ======= values from new run ======= \n\n")
 
 while True :
-	eteindre_lumiere
 
 	for i in range (4):
 		data[i]=sensor(i) 
@@ -38,13 +37,16 @@ while True :
 	print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*data))		
 
 	if data[0] > 5000 :
-		eclairer()
+		light_on()
+	else :
+		light_off()
 	if data[3] > 25000 :
-		arroser()
+		water()
+	
 	if data[1] < 3000 :
-		chauffer()
+		heater_on()
 	elif data[1] > 3000 :
-		stoper_chauffage()
+		heater_off()
 
 	time.sleep(wait_time)
 

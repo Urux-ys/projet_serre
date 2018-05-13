@@ -7,12 +7,11 @@ from sensors import sensor
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(15,GPIO.OUT)
+GPIO.setup(13,GPIO.OUT)
 
-def chauffer() :
-	GPIO.output(15, GPIO.HIGH)
+def light_on() :
+	GPIO.output(13, GPIO.HIGH)
 
-def stoper_chauffage() :
-	GPIO.output(15, GPIO.LOW)
-
+def light_off() :
+	GPIO.output(13, GPIO.LOW)
 

@@ -7,10 +7,12 @@ from sensors import sensor
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(13,GPIO.OUT)
+GPIO.setup(15,GPIO.OUT)
 
-def eclairer() :
-	GPIO.output(13, GPIO.HIGH)
+def heater_on() :
+	GPIO.output(15, GPIO.HIGH)
 
-def eteindre_lumiere() :
-	GPIO.output(13, GPIO.LOW)
+def heater_off() :
+	GPIO.output(15, GPIO.LOW)
+
+

@@ -9,7 +9,7 @@ import glob
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11,GPIO.OUT)
 
-def arroser():
+def water():
 	if sensor(3)>2500:
 		GPIO.output(11, GPIO.HIGH)
 	else :		
