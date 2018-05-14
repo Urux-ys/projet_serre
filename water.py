@@ -11,7 +11,7 @@ GPIO.setup(11,GPIO.OUT)
 
 def water_on():
 	GPIO.output(11, GPIO.HIGH)
-def water_off :		
+def water_off() :		
 	GPIO.output(11, GPIO.LOW)
 
 '''
