@@ -1,10 +1,16 @@
----
-title: This repo has move to GitLab
-author: It means that it will no longer be maintained here
-affiliation: check : https://gitlab.com/urux-ys/rpi-greenhouse
----
 
-## Raspbian
+# **This repo has move to GitLab**
+
+## It means that it will no longer be maintained here
+
+please check : https://gitlab.com/urux-ys/rpi-greenhouse
+
+# License 
+This project is under the terms of the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+
+
+* Raspbian
   install requierment using pip :
    ```
     [~]# sudo apt update && sudo apt install python-pip
@@ -18,7 +24,7 @@ affiliation: check : https://gitlab.com/urux-ys/rpi-greenhouse
     [~/projet_serre]# sudo python main.py
    ```
  
-## hardware 
+* hardware 
 
  use Adafruit I2C ADC module
  and use :
@@ -31,5 +37,4 @@ affiliation: check : https://gitlab.com/urux-ys/rpi-greenhouse
  *                15 for heat control  
 
 
-# License 
-This project is under the terms of the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
